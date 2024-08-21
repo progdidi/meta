@@ -1,1 +1,1 @@
-# Pomodorro - study timer
+# Meta
