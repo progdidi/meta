@@ -1,0 +1,27 @@
+.nft {
+    padding: 60px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nft__media {
+            .nft__title {
+                max-width: 351px;
+                margin-bottom: 41px;
+            }
+            &-img {
+            }
+        }
+        
+        .nft__info {
+            &-main {
+            }
+            &-text {
+            }
+            &-link {
+            }
+        }
+        
+    }
+    
+}
