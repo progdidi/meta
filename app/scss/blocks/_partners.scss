@@ -1,8 +1,21 @@
 .partners {
-}
-.partners__title {
-}
-.partners__items {
-}
-.partners__item {
+    padding: 60px 0;
+    margin-bottom: 120px;
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 109%;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--green-color);
+        margin-bottom: 50px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 85px 60px;
+    }
+    &__item {
+    }
 }

@@ -1,14 +1,26 @@
 .roadmap {
-}
-.roadmap__title {
-}
-.roadmap-item {
-}
-.roadmap-item__header {
-}
-.roadmap-item__info {
-}
-.roadmap-item__info-text {
-}
-.roadmap-item__info-img {
+    padding: 60px 0;
+    &__title {
+        margin-bottom: 106px;
+    }
+    .roadmap-item {
+        margin-bottom: 140px;
+        width: 540px;
+        border: 1px solid #8dfd1b;
+        background-color: var(--background-color);
+        &__header {
+            border-bottom: 1px solid #8dfd1b;
+            padding: 12px;
+        }
+        &__info {
+            padding: 30px 12px;
+            &-text {
+    
+            }
+            &-img {
+                width: 129px h 129px;
+            }
+        }
+    }
+    
 }

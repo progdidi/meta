@@ -44,3 +44,21 @@ button{
         color: #fff;
     }
 }
+
+.interactive__title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 111%;
+    text-transform: uppercase;
+}
+
+.main-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 152%;
+    color: var(--green-color);
+    padding-left: 22px;
+    border-left: 2px solid var(--green-color);
+}

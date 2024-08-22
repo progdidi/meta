@@ -1,10 +1,27 @@
 .artists {
-}
-.artists__inner {
-}
-.artists__item {
-}
-.artists__item-img {
-}
-.artists__item-name {
+    padding: 60px 60px;
+    margin-bottom: 120px;
+    &__title {
+      margin-bottom: 127px;  
+    }
+    .artists__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+        .artists__item {
+            max-width: 245px;
+            &-img {
+
+            }
+
+            &-name {
+                padding: 20px 0;
+                text-align: center;
+                font-family: var(--font-family);
+                line-height: 150%;
+                text-align: center;
+            }
+        }
+    }
+    
 }

@@ -14,11 +14,23 @@
         }
         
         .nft__info {
+            max-width: 580px;
             &-main {
+                margin-bottom: 32px;
             }
             &-text {
+                margin-bottom: 17px;
             }
             &-link {
+                display: block;
+                margin-top: 36px;
+                width: 246px;
+                padding: 10px 0 16px 0;
+                border: 1px solid var(--green-color);
+                font-family: var(--font-family);
+                line-height: 100%;
+                text-transform: capitalize;
+                text-align: center;
             }
         }
         
