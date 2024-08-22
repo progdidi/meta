@@ -62,3 +62,22 @@ button{
     padding-left: 22px;
     border-left: 2px solid var(--green-color);
 }
+
+.social__list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social__list-link {
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social__list-img {
+    width: 20px;
+    height: 20px;
+}
