@@ -1,33 +1,40 @@
 .footer {
     padding: 101px 0 120px;
     background-color: var(--purple-color);
+    font-family: var(--font-family);
     .footer__inner {
         display: flex;
         gap: 100px;
         .footer__item {
+            .logo__img {
+                width: 103px;
+                height: 24px;
+                object-fit: cover;
+                margin-bottom: 70px;
+            }
+            .footer__item-comment {               
+                font-size: 13px;
+                line-height: 158%;
+            }
+            .footer__menu {
+                &-item {
+                    font-size: 16px;
+                    line-height: 120%;
+                    margin-bottom: 29px;
+                }
+            }
+            .social {
+            }
+            .social__list {
+            }
+            .social__list-item {
+            }
+            .social__list-link {
+            }
+            .social__list-img {
+            }
         }
-        .logo__img {
-        }
-        .footer__item-comment {
-        }
-        .footer__menu {
-        }
-        .footer__menu-item {
-        }
-        .footer__menu-link {
-        }
-        .footer__item-comment-link {
-        }
-        .social {
-        }
-        .social__list {
-        }
-        .social__list-item {
-        }
-        .social__list-link {
-        }
-        .social__list-img {
-        }
+        
     }
     
 }

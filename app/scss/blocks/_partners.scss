@@ -15,7 +15,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 85px 60px;
-    }
-    &__item {
+        .partners__item {
+
+        }
     }
 }
