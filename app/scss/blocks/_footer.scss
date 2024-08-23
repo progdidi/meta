@@ -4,7 +4,7 @@
     font-family: var(--font-family);
     .footer__inner {
         display: flex;
-        gap: 100px;
+        gap: 64px;
         .footer__item {
             .logo__img {
                 width: 103px;
@@ -15,24 +15,28 @@
             .footer__item-comment {               
                 font-size: 13px;
                 line-height: 158%;
+                margin-bottom: 29px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
             .footer__menu {
                 &-item {
                     font-size: 16px;
                     line-height: 120%;
                     margin-bottom: 29px;
+                    min-width: 110px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                 }
             }
-            .social {
-            }
-            .social__list {
-            }
-            .social__list-item {
-            }
-            .social__list-link {
-            }
-            .social__list-img {
-            }
+        
+        }
+
+        .footer__nav {
+            display: flex;
+            gap: 100px;
         }
         
     }

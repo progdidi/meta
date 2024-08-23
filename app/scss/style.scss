@@ -16,5 +16,12 @@
 @import 'blocks/team';
 
 
-
+.visual-divider {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    &__img {
+        width: 100%;
+    }
+}
 

@@ -46,11 +46,17 @@ button{
 }
 
 .interactive__title {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 79px;
-    line-height: 111%;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 255px;
+    overflow: hidden;
+    &-item {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 79px;
+        line-height: 111%;
+        text-transform: uppercase;
+    }
 }
 
 .main-text {

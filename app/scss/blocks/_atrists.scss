@@ -8,6 +8,9 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 60px;
+        &__title {
+            margin-bottom: 120px;
+        }
         .artists__item {
             max-width: 245px;
             &-img {

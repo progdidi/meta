@@ -1,11 +1,13 @@
 .story {
     padding: 60px 0;
+    margin-bottom: 60px;
     .story__title {
         margin-bottom: 61px;
     }
     .story__details {
         display: grid;
         grid-template-columns: 24% 76%;
+       
         .story__buttons {
             display: flex;
             flex-direction: column;
@@ -14,7 +16,15 @@
                 width: 100%;
                 padding: 25px 0 31px 0;
                 line-height: 100%;
+                background-color: transparent;
+                color: #fff;
+                transition: all 0.3s;
                 &.active {
+                    color: var(--green-color);
+                    background-color: var(--background-color);
+                }
+
+                &:hover {
                     color: var(--green-color);
                     background-color: var(--background-color);
                 }
@@ -22,8 +32,12 @@
         }
         
         .story__items {
+            background-color: var(--background-color);
             .story__item {
                 padding: 60px;
+                display: flex;
+                align-items: flex-start;
+                gap: 40px;
                 &-main {
                     margin-bottom: 32px;
     
