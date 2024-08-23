@@ -2,20 +2,93 @@
     padding: 60px 0;
     &__title {
         margin-bottom: 106px;
+        text-align: center;
+        color: #fff;
     }
     .roadmap-item {
         margin-bottom: 140px;
         width: 540px;
         border: 1px solid #8dfd1b;
         background-color: var(--background-color);
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 140px;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 340px;
+            height: 340px;
+            top: 0;
+            right: -20px;
+            background-image: url('../../images/roadmap/roadmap-bg.svg');
+            background-repeat: no-repeat;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: -45%;
+            width: 1px;
+            height: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--green-color);
+        }
+        &:last-child::after {
+            display: none;
+        }
         &__header {
             border-bottom: 1px solid #8dfd1b;
             padding: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            &-num {
+                width: 45px;
+                height: 45px;
+                font-family: var(--font-family);
+                font-size: 28px;
+                line-height: 102%;
+                color: #000;
+                background-color: var(--green-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            &-phase {
+                margin-bottom: 1px;
+                font-family: var(--font-family);
+                font-size: 8px;
+                line-height: 150%;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                color: var(--green-color);
+            }
+            &-title {
+                font-family: var(--font-family);
+                font-size: 16px;
+                line-height: 173%;
+                text-transform: uppercase;
+            }
         }
         &__info {
             padding: 30px 12px;
+            display: flex;
+            gap: 75px;
+            align-items: flex-start;
+            .roadmap-item__list {
+                margin-bottom: 11px;
+                &-unit {
+                    font-size: 11px;
+                    line-height: 291%;
+                    padding-left: 23px;
+                    
+                }
+            }
+            
             &-text {
-    
+                font-size: 11px;
+                line-height: 233%;
             }
             &-img {
                 width: 129px h 129px;
