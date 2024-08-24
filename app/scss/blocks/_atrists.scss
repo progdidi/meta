@@ -1,10 +1,10 @@
 .artists {
-    padding: 60px 60px;
+    padding: 60px 0;
     margin-bottom: 120px;
     &__title {
       margin-bottom: 127px;  
     }
-    .artists__inner {
+    &__inner {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 60px;
@@ -27,4 +27,29 @@
         }
     }
     
+}
+
+@media (max-width: 1000px) {
+    .artists {
+        &__inner {
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .artists {
+        &__inner {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .artists {
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 }

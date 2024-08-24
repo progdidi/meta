@@ -51,3 +51,42 @@
     }
    
 }
+
+
+@media (max-width: 1000px) {
+    .story {
+        .story__details {  
+            display: flex;
+            flex-direction: column;                 
+            .story__buttons {
+                flex-direction: row;
+            }
+            
+        }
+       
+    }
+}
+
+@media (max-width: 800px) {
+    .story {
+        .story__details {  
+            .story__buttons {              
+                .story__item-btn {
+                    padding: 15px 0;
+                }
+            }                
+            .story__items {
+                .story__item {
+                    padding: 30px;
+                    display: block;
+                    &-img {
+                        float: left;
+                    }
+                }
+            }
+            
+        }
+       
+    }
+}
+

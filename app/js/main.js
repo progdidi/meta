@@ -1,10 +1,9 @@
-//times
+//hamburger menu
 
-const timer = document.querySelector(".timer");
-const minutes = document.querySelector(".minutes");
-const seconds = document.querySelector(".seconds");
-const startBtn = timer.querySelector(".start");
-const pauseBtn = timer.querySelector(".pause");
-const stopBtn = timer.querySelector(".stop");
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
 
-function getRemaingTime() {}
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+})
