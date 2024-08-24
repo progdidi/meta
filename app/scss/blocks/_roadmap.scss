@@ -101,9 +101,35 @@
                 line-height: 233%;
             }
             &-img {
-                width: 129px h 129px;
+                width: 129px;
+                height: 129px;
             }
         }
     }
     
+}
+
+@media (max-width: 850px) {
+    .roadmap {
+        .roadmap-item {
+            width: 80%;
+            margin-bottom: 70px;
+            &__info {
+                gap: 30px;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .roadmap {
+        .roadmap-item {
+            width: 90%;
+            &__info {
+                flex-direction: column-reverse;
+                
+            }
+        }
+    }
 }

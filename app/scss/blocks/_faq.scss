@@ -17,6 +17,7 @@
             background-color: var(--background-color);
             .faq__item {
                 &-title {
+                    padding-right: 40px;
                     margin-bottom: 24px;
                     font-family: var(--font-family);
                     font-weight: 400;
@@ -41,6 +42,43 @@
                     margin-bottom: 24px;
 
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .faq {
+        &__inner {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            .faq__media {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 80%;
+                &-title {
+                    text-align: center;
+                }
+            }
+            .faq__info {
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .faq {
+        &__inner {
+            .faq__media {
+                max-width: 90%;
+            }
+            .faq__info {
+                max-width: 100%;
             }
         }
     }

@@ -1,10 +1,10 @@
 .team {
     padding: 60px 0;
     margin-bottom: 100px;
-    .team__title {
+    &__title {
         margin-bottom: 122px;
     }
-    .team__inner {
+    &__inner {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 100px;
@@ -48,3 +48,29 @@
     }
     
 }
+
+@media (max-width: 900px) {
+    .team {
+        &__inner {
+            gap: 50px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .team {
+        &__inner {
+            max-width: 80%;
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+            gap: 50px;
+            .team__item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
